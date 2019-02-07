@@ -131,18 +131,21 @@
     </nav>
         </header>
 <!--    Start choose-us------------------>
-<!--
+<div class="container-fluid">
     <div class="choose-us">
             <div class="row">
                 <div class="col-6">
-                    <img src="img-admin/choose-us1.PNG" alt="" width="100%"/>
+                    <img src="img-admin/bazaar2.PNG" alt="" width="100%"/>
                 </div>
                 <div class="col-6">
-                    <h2 class="h1">Why Choose Us</h2>
-                    <p>We well Help you to choose mobile primness for you without leaving u house </p>
+                    <h2 class="h1">About Bazaar</h2>
+                    <p><i>Is a mobile site that offers a service to display the products of phone stores and know the prices of products and know the specifications of the devices and in any store exists and whether this product available or not without leaving the house.</i></p>
+                    <p><i> we are working to improve what we do to the happiness of our users and ourselves</i></p>
                 </div>
             </div>
-        </div>-->
+        </div>
+    </div>
+
 <!--    End choose-us--------->
 <!--    Star Our team-section------------>
    <div class="team-section">

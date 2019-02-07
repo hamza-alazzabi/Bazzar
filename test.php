@@ -23,7 +23,7 @@
     <!---- Link CSS for left-tool ------->
     <link href="css/left-tool.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
-    <link href="css/Css-About.css" rel="stylesheet">
+    <link href="css/SB.css" rel="stylesheet">
     
     <!---- Link CSS for file------->
     <link href="css/file.css" rel="stylesheet">
@@ -45,92 +45,6 @@
             background-color: #08526d;
         }
 
-      #menu-toggle {
-        background-color:;
-        height: ;
-        line-height:18px;
-        font-size: 25px;
-        color: white;
-        border: 1px solid white ;
-          position: fixed;
-        
-        }
-
-        #wrapper.toggled {
-          padding-left: 200px;
-        
-        }
-
-        #sidebar-wrapper {
-          z-index: 1000;
-          position: fixed;
-          left: 200px;
-          width: 0;
-          height: 100%;
-          margin-left: -200px;
-          overflow-y: auto;
-          background: #08526d;
-          -webkit-transition: all 0.5s ease;
-          -moz-transition: all 0.5s ease;
-          -o-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-        }
-
-        #wrapper.toggled #sidebar-wrapper {
-          width: 200px;
-            overflow-x: hidden
-                
-        }
-
-        #page-content-wrapper {
-          width: 200%;
-          position: absolute;
-          padding: 15px;
-        }
-
-        #wrapper.toggled #page-content-wrapper {
-          position: absolute;
-          margin-right: -200px;
-        }
-
-
-         Sidebar Styles 
-
-        .sidebar-nav {
-          position: absolute;
-          top: 0;
-          width: 200px;
-          margin: 0;
-          padding: 0;
-          list-style: none;
-        }
-        .sidebar-nav li a {
-          display: block;
-          text-decoration: none;
-          color: #999999;
-        }
-
-        .sidebar-nav li a:hover {
-          text-decoration: none;
-          color: #fff;
-/*          background: rgba(255, 255, 255, 0.2);*/
-            background: #f1654c;
-        }
-        .menu-hr{
-            background: white;
-            padding: 0;
-            margin: 0;
-        }
-        #menu-span{
-            color: #f1654c;
-            padding: 0;
-            margin: 0;
-        }
-
-        .sidebar-nav>.sidebar-brand a{
-          color: #fff;
-          background: none;
-        }
     </style>
     </head>
     <body>
@@ -140,9 +54,9 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
-                        MAIN MENU
-                    </a>
+                    <span href="#">
+                        BAZAAR MENU
+                    </span>
                 </li>
                 <hr class="menu-hr">
                 <li>
@@ -592,7 +506,7 @@
             <div class="row">
                 <div class="col">
                     <ul class="list-unstyled">
-                        <a href="#"><li>About</li></a>
+                        <a href="About.php"><li>About</li></a>
                         <a href="#"><li>Portofolio</li></a>
                         <a href="#"><li>Team</li></a>
                         <a href="#"><li>Price</li></a>
