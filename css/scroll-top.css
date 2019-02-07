@@ -1,0 +1,48 @@
+/*
+button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    font-size: 40px;
+}
+#goup {
+    font-family: 'FontAwesome';
+    content: "\f0e0";
+    display: inline-block;
+    margin-right: px;
+    font-size: 20px;
+}*/
+
+/*
+    div {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    font-size: 40px;
+}
+*/
+#goup {
+    font-family: 'FontAwesome';
+    content: "\f0aa";
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+   
+}
+    .far fa-arrow-circle-up {
+    font-family: 'FontAwesome';
+    content: "\f0aa";
+    display: inline-block;
+    font-size: 20px;
+        position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+}
