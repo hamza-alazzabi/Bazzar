@@ -6,33 +6,37 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- Favicon and Touch Icons -->
     <link href="ABC.png" rel="shortcut icon" type="image/png">
     <link href="ABC.png" rel="apple-touch-icon" sizes="57x57">
     <link href="ABC.png" rel="apple-touch-icon" sizes="72x72">
     <link href="ABC.png" rel="apple-touch-icon" sizes="114x114">
     <link href="ABC.png" rel="apple-touch-icon" sizes="144x144">
-
+    
     <!---- Link CSS for bootstrap ------->
      <link href="css/bootstrap.min.css" rel="stylesheet">
      <link href="css/fontawesome.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
 
-
+    <link href="font-awsome/css/font-awesome.min.css" rel="stylesheet">
     <!---- Link CSS for left-tool ------->
     <link href="css/left-tool.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
-
+    <link href="css/SB.css" rel="stylesheet">
+    
     <!---- Link CSS for file------->
     <link href="css/file.css" rel="stylesheet">
-
+    
     <!---- Link  for jquery------->
     <script src="jquery/jquery-3.3.1.js"></script>
-
+    
     <!---- Link CSS for slideshow------->
     <link rel="stylesheet" type="text/css" href="css/style-slide.css">
-
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!---- Link CSS for scroll-top------->
+    <link href="css/scroll-top.css" rel="stylesheet">
+    
     <style type="text/css">
         #color{
                 background-color: #08526d;
@@ -51,44 +55,119 @@
         .card p{
             font-size: 70%;
         }
-        .scrollable-menu {
-            height: auto;
-            max-height: 200px;
-            overflow-x: hidden;
-        }
     </style>
     </head>
     <body>
-        <!-------------------START UPPER-BAR ----------------->
+       <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <span href="#">
+                        BAZAAR MENU
+                    </span>
+                </li>
+                <hr class="menu-hr">
+                <li>
+                    <span id="menu-span">Phones</span>
+                </li>
+                <hr class="menu-hr">
+                <li>
+                    <a href="#">Apple</a>
+                </li>
+                <li>
+                    <a href="#">Samsung</a>
+                </li>
+                <li>
+                    <a href="#">Huawei</a>
+                </li>
+                <li>
+                    <a href="#">HTC</a>
+                </li>
+                <li>
+                    <a href="#">Sony</a>
+                </li>
+                <li>
+                    <a href="#">Blue</a>
+                </li>
+                <hr class="menu-hr">
+                <li>
+                    <span id="menu-span">Accessories</span>
+                </li>
+                <hr class="menu-hr">
+                <li>
+                    <a href="#">aer Phones</a>
+                </li>
+                <li>
+                    <a href="#">charging</a>
+                </li>
+                <li>
+                    <a href="#">Covers</a>
+                </li>
+                <li>
+                    <a href="#">Smart Watch</a>
+                </li>
+                <li>
+                    <a href="#">Screen Protact</a>
+                </li>
+                <li>
+                    <a href="#">Power Bank</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+<!--
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1>Simple Sidebar</h1>
+                 <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+            </div>
+        </div>
+-->
+        <!-- /#page-content-wrapper -->
+
+<!--    </div>-->
+    <!-- /#wrapper -->
         <div class="upper-bar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm">
-                        <a href="#"><span><i class="fa fa-phone"></i> 0218-914057595</span></a>
-
+                      
+                       <a href="#menu-toggle" class="btn btn-lg  fa fa-bars fixed" id="menu-toggle"></a>
+                       
+<!--                        <a href="#"><span><i class="fa fa-phone"></i> 0218-914057595</span></a>-->
+                        
                     </div>
+<!--
                     <div class="col-sm">
                         <span><i class="fa fa-envelope-o"></i>bazaar.store311@gmail</span>
                     </div>
-
+-->
+                    
 <!--
                     <div class="col-sm-2">
-
+                        
                         <a class="btn btn-outline-danger btn-sm" id="f0f3" href="#" role="button"><i class="fa fa-gift"></i></a>
                         <a class="btn btn-outline-danger btn-sm" id="f06b" href="#" role="button"><i class="fa fa-bell"></i></a>
                         <a class="btn btn-outline-danger btn-sm" id="f0e0" href="#" role="button"><i class="fa fa-envelope"></i></a>
                     </div>
 -->
-                    <form class="form-inline my-2 my-lg-0 " action="search-engine.php" method="post">
-                      <input class="form-control mr-sm-2" type="search" name="search-input" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-danger  my-2 my-sm-0" type="submit" onclick="getSearchResults()">Search</button>
+    
+                    
+                    <form class="form-inline my-2 my-lg-0 " method="post" action="search-page.php">
+                     
+                      <input class="form-control mr-sm-2" name="search-input" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-danger  my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </div>
-        <!-------------------START NAVBAR ----------------->
+        <!-------------------START NAVBAR--------------->
         <header>
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
       <a class="navbar-brand" href="#">
         <span>Bazaar</span><span>MobileStore</span>
@@ -103,7 +182,7 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="About.php">About <span class="sr-only">(current)</span></a>
           </li>
             <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
@@ -111,14 +190,14 @@
             <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
-
+            
             <li class="nav-item">
             <a class="nav-link" href="index.php">sign in</a>
           </li>
             <li class="nav-item">
             <a class="nav-link" href="signup.php">sign up</a>
           </li>
-
+            
 
 
 <!--
@@ -139,20 +218,8 @@
     </div>
     </nav>
         </header>
+
 <!--                                                write HERE!!!                           -->
-        
-        <div id="filters-small" class="container">
-            <ul class="dropdown-menu scrollable-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#">Action</a></li>
-                ..
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-            </ul>
-        </div>
-        
         <div class="row">
 <!--                                                filtering options                        -->
             <div id="filters-large" class="col-md-2">
@@ -280,86 +347,83 @@
                 </form>
 <!--                                              search results                                 -->
             <div id="results" class="card-columns col-md-10 col-sm-12">
-                <div class="container-fluid col-sm-12">
-                <div class="card">
-                    <a href="#"><img class="card-img-top results-item" src="iphone/iPhone6s.png"></a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Iphone 6s</h4>
-                        <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
-                        <p class="card-text">
-                            <b>- ram: </b>2GB<br>
-                            <b>- resolution: </b>750p<br>
-                            <b>- battarey: </b>4000mah<br>
-                            <b>- storage: </b>16/32/64/128 GB</p>
-                    </div>
+                <div class="col-sm-12">
+<?php
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+
+    try {
+        // establish database connection
+        $conn = new PDO("mysql:host=$servername;dbname=bazaar", $username, $password);
+        
+        // set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        
+        //input form search bar       
+        $input = strtolower($_POST['search-input']); 
+        $inputLen=strlen($input);
+        
+        //bring selected items only from database
+        $getSelectedItemsBySpec = $conn->prepare("SELECT * FROM items WHERE item_name LIKE '{$input}%'");
+        $getSelectedItemsBySpec->execute();
+        $selectedItems = $getSelectedItemsBySpec->fetchAll(PDO::FETCH_ASSOC);
+        
+        //bring all items from database
+        $getAllItems = $conn->prepare("SELECT * FROM items");
+        $getAllItems->execute();
+        $allItems = $getAllItems->fetchAll(PDO::FETCH_ASSOC);
+        
+//        $countItems = $conn->prepare("SELECT COUNT(item_id) AS number-of-items FROM items");
+//        $countItems->execute();
+//        $numberOfItems = $countItems->fetch(PDO::FETCH_ASSOC);
+        
+        //print all items
+        if ($input == "") {
+            foreach($allItems as $key => $value){
+                
+                echo    '<div class="card">
+                            <a href="#"><img class="card-img-top results-item" src="'.$value['item_image'].'"></a>
+                            <div class="card-body">
+                            <h4 class="card-title text-center">'.$value['item_name'].'</h4>
+                            <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
+                            <p class="card-text">
+                            <b>- ram: </b>'.$value['item_ram'].'<br>
+                            <b>- resolution: </b>'.$value['item_resolution'].'<br>
+                            <b>- battarey: </b>'.$value['item_battery'].'<br>
+                            <b>- storage: </b>'.$value['item_storage'].'</p>
+                            </div>
+                         </div>';                        
+                }
+            $getAllItems->execute();
+        //print only items with matching name
+        }else {
+            foreach($selectedItems as $key => $value){
+                echo    '<div class="card">
+                            <a href="#"><img class="card-img-top results-item" src="'.$value['item_image'].'"></a>
+                            <div class="card-body">
+                            <h4 class="card-title text-center">'.$value['item_name'].'</h4>
+                            <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
+                            <p class="card-text">
+                            <b>- ram: </b>'.$value['item_ram'].'<br>
+                            <b>- resolution: </b>'.$value['item_resolution'].'<br>
+                            <b>- battarey: </b>'.$value['item_battery'].'<br>
+                            <b>- storage: </b>'.$value['item_storage'].'</p>
+                            </div>
+                     </div>';                        
+                    }
+
+                $getSelectedItemsBySpec->execute();
+        }
+    }
+    catch(PDOException $e){
+        echo "Connection failed: " . $e->getMessage();
+    }
+?>
                 </div>
-                <div class="card">
-                    <a href="#"><img class="card-img-top results-item thumbnail" src="iphone/iPhone6s.png"></a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Iphone 6s</h4>
-                        <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
-                        <p class="card-text small">
-                            <b>- ram: </b>2GB<br>
-                            <b>- resolution: </b>750p<br>
-                            <b>- battarey: </b>4000mah<br>
-                            <b>- storage: </b>16/32/64/128 GB</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#"><img class="card-img-top results-item" src="iphone/iPhone6s.png"></a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Iphone 6s</h4>
-                        <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
-                        <p class="card-text">
-                            <b>- ram: </b>2GB<br>
-                            <b>- resolution: </b>750p<br>
-                            <b>- battarey: </b>4000mah<br>
-                            <b>- storage: </b>16/32/64/128 GB</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#"><img class="card-img-top results-item" src="iphone/iPhone6s.png"></a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Iphone 6s</h4>
-                        <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
-                        <p class="card-text">
-                            <b>- ram: </b>2GB<br>
-                            <b>- resolution: </b>750p<br>
-                            <b>- battarey: </b>4000mah<br>
-                            <b>- storage: </b>16/32/64/128 GB</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#"><img class="card-img-top results-item" src="iphone/iPhone6s.png"></a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Iphone 6s</h4>
-                        <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
-                        <p class="card-text">
-                            <b>- ram: </b>2GB<br>
-                            <b>- resolution: </b>750p<br>
-                            <b>- battarey: </b>4000mah<br>
-                            <b>- storage: </b>16/32/64/128 GB</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="#"><img class="card-img-top results-item" src="iphone/iPhone6s.png"></a>
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Iphone 6s</h4>
-                        <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
-                        <p class="card-text">
-                            <b>- ram: </b>2GB<br>
-                            <b>- resolution: </b>750p<br>
-                            <b>- battarey: </b>4000mah<br>
-                            <b>- storage: </b>16/32/64/128 GB</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div id="test" class="container-fluid">
             </div>
         </div>
 
-        <!-------------------START FOOTER ----------------->
 <footer class="footer">
 <div class="container">
     <div class="row">
@@ -376,7 +440,7 @@
             <div class="row">
                 <div class="col">
                     <ul class="list-unstyled">
-                        <a href="#"><li>About</li></a>
+                        <a href="About.php"><li>About</li></a>
                         <a href="#"><li>Portofolio</li></a>
                         <a href="#"><li>Team</li></a>
                         <a href="#"><li>Price</li></a>
@@ -402,17 +466,18 @@
                 <li>University of Tripoli LY</li>
                 <li>phone 0218 911234567</li>
                 <li>Email: <a href="mailto:info@elitecorp.com?subject=contact">info@elitecorp.com</a></li>
-            </ul>
+            </ul> 
         </div>
     </div>
-    </div>
+    </div> 
     <hr class="hr">
-</div>
-
+</div> 
+        
 </footer>
-<!-------------------END FOOTER ----------------->
-
-<!-------------------START COPYRIGHT ----------------->
+<!-- end footer -->
+    
+<!-- START COPYRIGHT -->
+        
 <div class="copyright">
     <div class="container">
         <div class="row">
@@ -438,9 +503,12 @@
         </div>
     </div>
 </div>
-    <!-------------------END COPYRIGHT ----------------->
-
-<!------------------- INSERT JAVASCRIPT ----------------->
+<!--     include scroll-top-------->
+<?php include 'scroll-top.php'; ?>
+        
+</div>
+<!--<div id="goup"><b class="far fa-arrow-circle-up"></b></div>-->
+  
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -448,15 +516,23 @@
     <script type="text/javascript" src="jquery/jquery.cycle2.min.js"></script>
     <script type="text/javascript" src="js/slider-fun.js"></script>
     <script type="text/javascript" src="menu.left.js"></script>
-    <script type="text/javascript">
-        //*------------------ Load Font Awesome------------
-
+    <script type="text/javascript" src="js/scroll-top.js"></script>
+        <script type="text/javascript">
+        //* Load Font Awesome
+        
 add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
 function enqueue_font_awesome() {
 
     wp_enqueue_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
 
 }</script>
+   <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 <!--                                         brand input filter toggle                         -->
     <script>
         $(document).ready(function(){

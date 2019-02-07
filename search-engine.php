@@ -25,31 +25,36 @@
     $password = "";
 
     try {
+        // establish database connection
         $conn = new PDO("mysql:host=$servername;dbname=bazaar", $username, $password);
+        
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-               
+        
+        //input form search bar       
         $input = strtolower($_POST['search-input']); 
         $inputLen=strlen($input);
         
-        $getSelectedItems = $conn->prepare("SELECT * FROM items WHERE item_name LIKE '{$input}%' OR item_ram LIKE '%{$input}%' OR item_storage LIKE '%{$input}%' OR item_battery LIKE '{$input}%' OR item_resolution LIKE '%{$input}%'");
-        $getSelectedItems->execute();
-        $selectedItem = $getSelectedItems->fetch(PDO::FETCH_ASSOC);
-        $selectedItems = $getSelectedItems->fetchAll(PDO::FETCH_ASSOC);
+        //bring selected items only from database
+        $getSelectedItemsBySpec = $conn->prepare("SELECT * FROM items WHERE item_name LIKE '{$input}%'");
+        $getSelectedItemsBySpec->execute();
+        $selectedItems = $getSelectedItemsBySpec->fetchAll(PDO::FETCH_ASSOC);
         
+        //bring all items from database
         $getAllItems = $conn->prepare("SELECT * FROM items");
         $getAllItems->execute();
-        $allitems = $getAllItems->fetchAll(PDO::FETCH_ASSOC);
+        $allItems = $getAllItems->fetchAll(PDO::FETCH_ASSOC);
         
 //        $countItems = $conn->prepare("SELECT COUNT(item_id) AS number-of-items FROM items");
 //        $countItems->execute();
 //        $numberOfItems = $countItems->fetch(PDO::FETCH_ASSOC);
+        //print all items
                 echo '<div id="results" class="card-columns col-md-10 col-sm-12">
                         <div class="container-fluid col-sm-12">';
-        if ($input !== "") {
-            foreach($selectedItems as $row => $value){
+        if ($input == "") {
+            foreach($allItems as $key => $value){
                 
-                echo       '<div class="card">
+                echo    '<div class="card">
                             <a href="#"><img class="card-img-top results-item" src="'.$value['item_image'].'"></a>
                             <div class="card-body">
                             <h4 class="card-title text-center">'.$value['item_name'].'</h4>
@@ -60,14 +65,30 @@
                             <b>- battarey: </b>'.$value['item_battery'].'<br>
                             <b>- storage: </b>'.$value['item_storage'].'</p>
                             </div>
-                            </div>';                        
+                        </div>';                        
                 }
-            $getAllItems->execute();
+            $getSelectedItemsBySpec->execute();
         }else {
             
-        }
-                echo '</dive>
+        
+                echo    '</dive>
                       </div>';
+        foreach($selectedItems as $key => $value){
+            echo    '<div class="card">
+                            <a href="#"><img class="card-img-top results-item" src="'.$value['item_image'].'"></a>
+                            <div class="card-body">
+                            <h4 class="card-title text-center">'.$value['item_name'].'</h4>
+                            <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
+                            <p class="card-text">
+                            <b>- ram: </b>'.$value['item_ram'].'<br>
+                            <b>- resolution: </b>'.$value['item_resolution'].'<br>
+                            <b>- battarey: </b>'.$value['item_battery'].'<br>
+                            <b>- storage: </b>'.$value['item_storage'].'</p>
+                            </div>
+                        </div>';                        
+                }
+            $getAllItems->execute();
+        }
     }
     catch(PDOException $e){
         echo "Connection failed: " . $e->getMessage();
