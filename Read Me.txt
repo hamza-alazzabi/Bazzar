@@ -1,0 +1,15 @@
+main-page :
+1- Test is main page .
+2- Profile is a page after you login .
+3- index is a page content form sgin in, sgin up, back and forgot.
+4- action is a page database, setcookies, set forgot, phpmailer.
+5- config
+6- logout
+7- signup
+8- session
+9- login_system  my (database) in phpmyadmin you have to insert it in phpmyadmin to start .
+note: (You must connect to the Internet to work).
+and thank you to read me.
+by 
+     Yousef Alatrash
+     216185036

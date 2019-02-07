@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*---------Our team-section---------*/
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    background: #34495e;
+    padding: 60px;
+}
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 40px;
+}
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #3498db;
+    margin-bottom: 40px;
+}
+
+.ps{
+    margin-bottom: 40px;
+}
+.ps a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+.ps a img{
+    width: 100%;
+    filter:  grayscale(100%);
+    transition: 0.4s all;
+}
+.ps a:hover > img{
+    filter: none;
+}
+
+.section{
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    width: 300px;
+    word-wrap:break-word; 
+}
+.section:target{
+    height:auto;
+}
+.name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*----------why choose-us-------*/
+container-fluid.choose-us img {
+    max-width:100%;
+    padding: 0;
+    margin: 0;
+}
+
+.choose-us .col-6 {
+    padding: 0;
+}
+.choose-us .col-6:last-child {
+   background-color: slategrey;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.choose-us .h1 {
+    margin: 40px;
+}
+.choose-us p {
+    margin: 40px;
+    line-height: 2;
+    font-size: 18px;
+}
