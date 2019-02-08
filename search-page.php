@@ -44,9 +44,9 @@
         .footer{
             background-color: #08526d;
         }
-        .results-item {
-            max-height: 250px;
-            max-width: 90%;
+        div a img[class~=card-img-top] {
+            height: 240px;
+            max-width: 240px;
             
         }
         .filter, #brands, #cities, #storage{
@@ -346,84 +346,13 @@
                     </div>
                 </form>
 <!--                                              search results                                 -->
-            <div id="results" class="card-columns col-md-10 col-sm-12">
-                <div class="col-sm-12">
-<?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-
-    try {
-        // establish database connection
-        $conn = new PDO("mysql:host=$servername;dbname=bazaar", $username, $password);
-        
-        // set the PDO error mode to exception
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        
-        //input form search bar       
-        $input = strtolower($_POST['search-input']); 
-        $inputLen=strlen($input);
-        
-        //bring selected items only from database
-        $getSelectedItemsBySpec = $conn->prepare("SELECT * FROM items WHERE item_name LIKE '{$input}%'");
-        $getSelectedItemsBySpec->execute();
-        $selectedItems = $getSelectedItemsBySpec->fetchAll(PDO::FETCH_ASSOC);
-        
-        //bring all items from database
-        $getAllItems = $conn->prepare("SELECT * FROM items");
-        $getAllItems->execute();
-        $allItems = $getAllItems->fetchAll(PDO::FETCH_ASSOC);
-        
-//        $countItems = $conn->prepare("SELECT COUNT(item_id) AS number-of-items FROM items");
-//        $countItems->execute();
-//        $numberOfItems = $countItems->fetch(PDO::FETCH_ASSOC);
-        
-        //print all items
-        if ($input == "") {
-            foreach($allItems as $key => $value){
-                
-                echo    '<div class="card">
-                            <a href="#"><img class="card-img-top results-item" src="'.$value['item_image'].'"></a>
-                            <div class="card-body">
-                            <h4 class="card-title text-center">'.$value['item_name'].'</h4>
-                            <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
-                            <p class="card-text">
-                            <b>- ram: </b>'.$value['item_ram'].'<br>
-                            <b>- resolution: </b>'.$value['item_resolution'].'<br>
-                            <b>- battarey: </b>'.$value['item_battery'].'<br>
-                            <b>- storage: </b>'.$value['item_storage'].'</p>
-                            </div>
-                         </div>';                        
-                }
-            $getAllItems->execute();
-        //print only items with matching name
-        }else {
-            foreach($selectedItems as $key => $value){
-                echo    '<div class="card">
-                            <a href="#"><img class="card-img-top results-item" src="'.$value['item_image'].'"></a>
-                            <div class="card-body">
-                            <h4 class="card-title text-center">'.$value['item_name'].'</h4>
-                            <a href="#" class="card-link"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span></a>
-                            <p class="card-text">
-                            <b>- ram: </b>'.$value['item_ram'].'<br>
-                            <b>- resolution: </b>'.$value['item_resolution'].'<br>
-                            <b>- battarey: </b>'.$value['item_battery'].'<br>
-                            <b>- storage: </b>'.$value['item_storage'].'</p>
-                            </div>
-                     </div>';                        
-                    }
-
-                $getSelectedItemsBySpec->execute();
-        }
-    }
-    catch(PDOException $e){
-        echo "Connection failed: " . $e->getMessage();
-    }
-?>
-                </div>
-            </div>
+            
+            <?php
+                    require 'search-by-device-name.php';
+            ?>
         </div>
-
+           
+           
 <footer class="footer">
 <div class="container">
     <div class="row">
