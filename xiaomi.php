@@ -6,7 +6,7 @@ require 'N&F.php';
       <div class="jumbotron-fluid">
       <div class="col-sm">
       <div class="thumbnail">
-      <img src="xiaomi\maxresdefault.jpg" width="85%" alt="My desktop" class="rounded mx-auto d-block">
+      <img src="xiaomi\index-2.jpg" width="85%" alt="My desktop" class="rounded mx-auto d-block">
       </div>
       </div>
       </div>

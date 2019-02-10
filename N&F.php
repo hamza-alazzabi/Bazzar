@@ -163,7 +163,7 @@
       <div class="collapse navbar-collapse" id="main-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="test.php">Home</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="About.php">About <span class="sr-only">(current)</span></a>
