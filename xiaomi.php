@@ -85,7 +85,8 @@ require 'N&F.php';
         </div>
         <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="xiaomi\Xiaomi Mi 8 Pro.jpg" alt="My desktop">
+<a href="xiaomi_1.php" target="_self">
+            <img src="xiaomi\Xiaomi Mi 8 Pro.jpg" alt="My desktop"></a>
             <div class="caption text-center">
                 <h5>Mi 8 Pro</h5>
                 <p>
