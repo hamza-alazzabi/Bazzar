@@ -153,7 +153,7 @@
         <header>
 <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="test.php">
         <span>Bazaar</span><span>MobileStore</span>
         </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

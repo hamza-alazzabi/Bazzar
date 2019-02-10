@@ -16,11 +16,11 @@ require 'N&F.php';
     <div class="row">
         <div class="col-sm">
             <div class="img-thumbnail text-center">
-              <a href="http://localhost/final-pro-copy1/project2/nav-footer.php" target="_self">
-            <img src="iphone/iPhone6s.png" alt="My desktop"></a>
+              <a href="iphone_xs_max.php" target="_self">
+            <img src="iphone/new_apple_iphone_xs_max_phone_-_gold_lowest_price_in_ksa_5.jpg" alt="My desktop"></a>
             <div class="caption text-center">
 
-                <h5>Apple iPhone 6 (64GB)</h5>
+                <h5>iphone Xs Max</h5>
                 <p>
                    Space Gray <br>
                     by Apple <br>
@@ -35,9 +35,10 @@ require 'N&F.php';
         </div>
         <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="iphone/iPhone7.png" alt="My desktop">
+              <a href="iphone_7.php" target="_self">
+            <img src="iphone/iPhone7.png" alt="My desktop"></a>
             <div class="caption text-center">
-                <h5>Apple iPhone 7 (32GB)</h5>
+                <h5>Apple iPhone 7</h5>
                 <p>
                    Space Gray <br>
                     by Apple <br>
@@ -51,9 +52,10 @@ require 'N&F.php';
         </div>
         <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="iphone/iPhone8.png" alt="My desktop">
+              <a href="iphone_x.php" type="_self">
+            <img src="iphone\icon\apple-iphone-xs-gold-combo_2.jpg" alt="My desktop"></a>
             <div class="caption text-center">
-                <h5>Apple iPhone 8 (64GB)</h5>
+                <h5>Apple iPhone xs</h5>
                 <p>
                    Space Gray <br>
                     by Apple <br>
@@ -67,11 +69,12 @@ require 'N&F.php';
         </div>
         <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="iphone/iPhone8.png" alt="My desktop">
+              <a href="iphone_x.php" type="_self">
+            <img src="iphone\icon\apple-iphone-x.jpg" alt="My desktop"></a>
             <div class="caption text-center">
-                <h5>Apple iPhone 8 (64GB)</h5>
+                <h5>Apple iPhone X</h5>
                 <p>
-                   Space Gray <br>
+                   White <br>
                     by Apple <br>
                     <a href="#"> $299.99</a>
                 </p>
@@ -83,9 +86,10 @@ require 'N&F.php';
         </div>
         <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="iphone/iPhone6s.png" alt="My desktop">
+              <a href="iphone_6.php" target="_self">
+            <img src="iphone/iPhone6s.png" alt="My desktop"></a>
             <div class="caption text-center">
-                <h5>Apple iPhone 6 (64GB)</h5>
+                <h5>Apple iPhone 6</h5>
                 <p>
                    Space Gray <br>
                     by Apple <br>
@@ -99,9 +103,10 @@ require 'N&F.php';
         </div>
            <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="iphone/iPhone7.png" alt="My desktop">
+<a href="#">
+            <img src="iphone\icon\apple-iphone-xr-a2108.jpg" alt="My desktop"></a>
             <div class="caption text-center">
-                <h5>Apple iPhone 7 (32GB)</h5>
+                <h5>Apple iPhone XR</h5>
                 <p>
                    Space Gray <br>
                     by Apple <br>
