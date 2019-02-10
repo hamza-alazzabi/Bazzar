@@ -6,7 +6,7 @@ require 'N&F.php';
       <div class="jumbotron-fluid">
       <div class="col-sm">
       <div class="thumbnail">
-      <img src="xiaomi\maxresdefault.jpg" width="85%" alt="My desktop" class="rounded mx-auto d-block">
+      <img src="huawei\Huawei-P20-Pro-1.jpg" width="85%" alt="My desktop" class="rounded mx-auto d-block">
       </div>
       </div>
       </div>
@@ -17,13 +17,13 @@ require 'N&F.php';
         <div class="col-sm">
             <div class="img-thumbnail text-center">
               <a href="" target="_self">
-            <img src="xiaomi\Xiaomi-Redmi-Note-7-1.jpg" alt="My desktop"></a>
+            <img src="huawei\600x600.jpg" alt="My desktop"></a>
             <div class="caption text-center">
 
-                <h5>Redmi Note 7</h5>
+                <h5>Nova 4</h5>
                 <p>
-                    Dream Blue<br>
-                    by Xiaomi <br>
+                    Read<br>
+                    by Huawei <br>
 
                 </p>
 
@@ -36,13 +36,13 @@ require 'N&F.php';
         <div class="col-sm">
             <div class="img-thumbnail text-center">
               <a href="#" target="_self">
-            <img src="xiaomi\xiaomi_mi_play.jpg" alt="My desktop">
+            <img src="huawei\huawei-p-smart-2019-2.jpg" alt="My desktop">
             </a>
             <div class="caption text-center">
-                <h5>Mi Play</h5>
+                <h5>P Smart</h5>
                 <p>
-                   Dream Blue <br>
-                    by Xiaomi <br>
+                   Aurora Blue <br>
+                    by Huawei <br>
 
                 </p>
                 <p>
@@ -53,12 +53,12 @@ require 'N&F.php';
         </div>
         <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="xiaomi\Black Shark 2.jpg" alt="My desktop">
+            <img src="huawei\Huawei-Enjoy-9.jpg" alt="My desktop">
             <div class="caption text-center">
-                <h5>Black Shark 2</h5>
+                <h5>Enjoy 9</h5>
                 <p>
-                   Black <br>
-                    by Xiaomi <br>
+                   Aurora Violet <br>
+                    by Huawei <br>
 
                 </p>
                 <p>
@@ -69,12 +69,12 @@ require 'N&F.php';
         </div>
         <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="xiaomi\Xiaomi Mi Mix 3_7acd.jpg" alt="My desktop">
+            <img src="huawei\Mate 20 Pro.jpg" alt="My desktop">
             <div class="caption text-center">
-                <h5>Mi Mix3</h5>
+                <h5>Mate 20 Pro</h5>
                 <p>
                    Midnight Blue <br>
-                    by Xiaomi <br>
+                    by Huawei <br>
 
                 </p>
                 <p>
@@ -85,12 +85,12 @@ require 'N&F.php';
         </div>
         <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="xiaomi\Xiaomi Mi 8 Pro.jpg" alt="My desktop">
+            <img src="huawei\huawei-mate-20x-dual-sim-6gb-128gb-blue-al29.jpg" alt="My desktop">
             <div class="caption text-center">
-                <h5>Mi 8 Pro</h5>
+                <h5>Mate 20X</h5>
                 <p>
-                    Red<br>
-                    by Xiaomi <br>
+                    Midnight Blue<br>
+                    by Huawei <br>
 
                 </p>
                 <p>
@@ -101,12 +101,12 @@ require 'N&F.php';
         </div>
            <div class="col-sm">
             <div class="img-thumbnail text-center">
-            <img src="xiaomi\Xiaomi-Mi-A2.jpg" alt="My desktop">
+            <img src="huawei\Nova 3.jpg" alt="My desktop">
             <div class="caption text-center">
-                <h5>Mi A2</h5>
+                <h5>Nova 3</h5>
                 <p>
-                   Rose Gold <br>
-                    by Xiaomi <br>
+                   Airy blue <br>
+                    by Huawei <br>
 
                 </p>
                 <p>
@@ -115,15 +115,30 @@ require 'N&F.php';
               </div>
             </div>
         </div>
+        <div class="col-sm">
+         <div class="img-thumbnail text-center">
+         <img src="huawei\Mate 20 RS.jpg" alt="My desktop">
+         <div class="caption text-center">
+             <h5>Mate 20 RS</h5>
+             <p>
+                Red <br>
+                 by Huawei <br>
 
+             </p>
+             <p>
+             <a href="#" id="" class="btn btn-primary" role="button">more details</a></p>
+             <!--<span><a href="#" class="btn btn-primary" role="button">By Now</a></span>-->
+           </div>
+         </div>
+     </div>
      <div class="col-sm">
       <div class="img-thumbnail text-center">
-      <img src="xiaomi\Mi 8 Explore.jpg" alt="My desktop">
+      <img src="huawei\Mate 10.jpg" alt="My desktop">
       <div class="caption text-center">
-          <h5>Mi 8 Explore</h5>
+          <h5>Mate 10</h5>
           <p>
-              Black   <br>
-              by Xiaomi <br>
+             Airy blue <br>
+              by Huawei <br>
 
           </p>
           <p>
@@ -134,12 +149,12 @@ require 'N&F.php';
   </div>
   <div class="col-sm">
    <div class="img-thumbnail text-center">
-   <img src="xiaomi\note 6.jpg" alt="My desktop">
+   <img src="huawei\HUAWEI-Honor.jpg" alt="My desktop">
    <div class="caption text-center">
-       <h5>redmi Note 6 Pro</h5>
+       <h5>Mate 10 Pro</h5>
        <p>
-          Rose Gold <br>
-           by Xiaomi <br>
+          Airy blue <br>
+           by Huawei <br>
 
        </p>
        <p>
@@ -148,28 +163,12 @@ require 'N&F.php';
      </div>
    </div>
 </div>
-<div class="col-sm">
- <div class="img-thumbnail text-center">
- <img src="xiaomi\Mi Mix2.jpg" alt="My desktop">
- <div class="caption text-center">
-     <h5>Mi Mix2</h5>
-     <p>
-         Blue <br>
-         by Xiaomi <br>
 
-     </p>
-     <p>
-     <a href="#" id="" class="btn btn-primary" role="button">more details</a></p>
-     <!--<span><a href="#" class="btn btn-primary" role="button">By Now</a></span>-->
-   </div>
- </div>
-</div>
-        </div>
-    </div></div>
-
+        </div></div>
+    </div>
 
 		<?php
 		require 'footer.php';
 		 ?>
-			    </body>
+	  </body>
 			</html>

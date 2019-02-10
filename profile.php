@@ -10,14 +10,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>profile</title>
-        
+
         <!-- Favicon and Touch Icons -->
         <link href="ABC.png" rel="shortcut icon" type="image/png">
         <link href="ABC.png" rel="apple-touch-icon" sizes="57x57">
         <link href="ABC.png" rel="apple-touch-icon" sizes="72x72">
         <link href="ABC.png" rel="apple-touch-icon" sizes="114x114">
         <link href="ABC.png" rel="apple-touch-icon" sizes="144x144">
-        
+
         <link rel="stylesheet" href="css/bootstrap.min.css" >
         <link href="css/fontawesome.min.css" rel="stylesheet">
 <!--        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
@@ -35,7 +35,7 @@
 
         <!---- Link CSS for slideshow------->
         <link rel="stylesheet" type="text/css" href="css/style-slide.css">
-        
+
         <!---- Link CSS for scroll-top------->
         <link href="css/scroll-top.css" rel="stylesheet">
         <style>
@@ -49,7 +49,7 @@
             background-color: #08526d;
         }
 
-        
+
     </style>
     </head>
     <body>
@@ -81,7 +81,7 @@
                     <a href="#">HTC</a>
                 </li>
                 <li>
-                    <a href="#">Sony</a>
+                    <a href="xiaomi.php">xiaomi</a>
                 </li>
                 <li>
                     <a href="#">Blue</a>
@@ -121,21 +121,21 @@
                        <i class="fa fa-phone"></i>
                        <a href="#"><span> 0218-914057595</span></a>
 -->
-                        
+
                     </div>
 <!--
                     <div class="col-sm"><i class="fa fa-envelope-o"></i>
                         <span>bazaar.store311@gmail</span>
                     </div>
 -->
-                    
+
                     <div class="col-sm-2">
-                        
+
                         <a class="btn btn-outline-danger btn-sm" id="f0f3" href="#" role="button"><i class="fa fa-gift"></i></a>
                         <a class="btn btn-outline-danger btn-sm" id="f06b" href="#" role="button"><i class="fa fa-bell"></i></a>
                         <a class="btn btn-outline-danger btn-sm" id="f0e0" href="#" role="button"><i class="fa fa-envelope"></i></a>
                     </div>
-                   
+
                     <form class="form-inline my-2 my-lg-0 ">
                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-danger  my-2 my-sm-0" type="submit">Search</button>
@@ -146,11 +146,11 @@
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
       <a class="navbar-brand" href="#"><img alt="Bazaar"  src="ABC.png" width="80%"></a>
-          
+
 
   <!-- Links -->
   <ul class="navbar-nav ml-auto">
-      
+
 <!--
     <li class="nav-item">
       <a class="nav-link" href="#">Services</a>
@@ -172,7 +172,7 @@
     </li>
   </ul>
 </nav>
-        
+
 <!--
 <div class="container">
     <div class="jumbotron jumbotron-fluid" id="color">
@@ -183,13 +183,13 @@
           <h2 class="text-center">E-Mail: <?= $email; ?></h2>
           <h2 class="text-center">Registered On: <?= $created; ?></h2>
 
-          <p>phones , Accessoires and other for Mobile...</p> 
+          <p>phones , Accessoires and other for Mobile...</p>
       </div>
     </div>
 </div>
 -->
 <!--        start----------------------------------------------------------->
-        
+
         <!-------------------START NAVBAR--------------->
         <header>
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -223,7 +223,7 @@
             <a class="nav-link" href="#">sign up</a>
           </li>
 -->
-            
+
 <!--
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -247,7 +247,7 @@
             <span class="close-btn-1 "><i class="fa fa-bars"></i></span>
             <ul id="father">
                 <h1>MAIN MENU</h1>
-                <li> Phones 
+                <li> Phones
                      <ul class="son-1">
                         <li> Apple </li>
                         <li> Samsung </li>
@@ -257,7 +257,7 @@
                         <li> Sony </li>
                         <li> HTC </li>
 
-                    </ul> 
+                    </ul>
                 </li>
                 <li> Accessories
                     <ul class="son-1">
@@ -266,14 +266,14 @@
                         <li> Covers </li>
                         <li> Screen Protact </li>
                         <li> Smart Watch</li>
-                    </ul>     
+                    </ul>
                 </li>
 
-                <li> The Other 
+                <li> The Other
                        <ul class="son-1">
                         <li> ?????????</li>
                         <li> ?????????</li>
-                    </ul>  
+                    </ul>
                 </li>
 
                  <li> Accessories
@@ -282,9 +282,9 @@
                     <li> harging</li>
                     <li> Covers </li>
 
-                </ul>     
+                </ul>
             </li>
-        </ul>     
+        </ul>
     </nav>
 -->
     <!------------ END NAVBAR-------------------->
@@ -325,21 +325,21 @@
     <!------------END SLIDER ------------------>
     <!------ START: IMAGE SLIDER------>
         <div class="container">
-        <div class="cycle-slideshow" 
+        <div class="cycle-slideshow"
              data-cycle-speed="1000"
              data-cycle-manual-speed="900"
              >
          <!--- data-cycle-fx="scrollHorz"--->
          <!------- END: IMAGE SLIDER------------->
-            
+
         <!------ START: controllers------>
             <span class="cycle-prev"><b>&#60;</b></span>
             <span class="cycle-next"><b>&#62;</b></span>
 <!--            <span class="cycle-pager"></span>-->
-            
-        <!------ END controllers---------->  
-            
-            
+
+        <!------ END controllers---------->
+
+
             <img src="slider-img/slider1.gif" alt="iphone-6">
             <img src="slider-img/slider4.png" alt="iphone-xr">
             <img src="slider-img/slider2.jpg" alt="bazaar">
@@ -560,7 +560,7 @@
         </div>
         </div>
     </div>
-    
+
 </div>
 <footer class="footer">
 <div class="container">
@@ -604,18 +604,18 @@
                 <li>University of Tripoli LY</li>
                 <li>phone: 0218 911234567</li>
                 <li>Email: <a href="mailto:info@elitecorp.com?subject=contact">info@elitecorp.com</a></li>
-            </ul> 
+            </ul>
         </div>
     </div>
-    </div> 
+    </div>
     <hr class="hr">
-</div> 
-        
+</div>
+
 </footer>
 <!-- end footer -->
-    
+
 <!-- START COPYRIGHT -->
-        
+
 <div class="copyright">
     <div class="container">
         <div class="row">
@@ -642,8 +642,8 @@
     </div>
     <!--     include scroll-top-------->
 <?php include 'scroll-top.php'; ?>
-</div>        
-        </div>  
+</div>
+        </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -652,9 +652,9 @@
     <script type="text/javascript" src="js/slider-fun.js"></script>
     <script type="text/javascript" src="menu.left.js"></script>
         <script type="text/javascript">
-            
+
         //* Load Font Awesome
-        
+
 add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
 function enqueue_font_awesome() {
 
