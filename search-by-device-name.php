@@ -63,20 +63,16 @@
                 $getSelectedItemsByName->execute();
                 echo '</div>
                 </div>';
+        // no items match search parameter
         }else if ($selectedItems == false){
                 echo '<div id="results" class="col-md-10 col-sm-12">
                         <div class="col-sm-12">';
-                echo '<h3>We\'re sorry, we found no results</h3>
-                      <p>Suggestions :</p>
-                      <ul class="group-list">
-                          <li class="list-item">Please check your spelling and try again.</li>
-                          <li class="list-item">To find devices based on required features and specs - try our <a href="phone-finder.php">Phone Finder</a>.</li>
-                      </ul>';
+                echo '<h3 class="col-offset-2">We\'re sorry, we found no results</h3>';
                 echo '</div>
                 </div>';
         }
     }
     catch(PDOException $e){
-                echo "Connection failed: " . $e->getMessage();
+        echo "Connection failed: " . $e->getMessage();
     }
 ?>

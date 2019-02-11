@@ -44,11 +44,47 @@
         .footer{
             background-color: #08526d;
         }
-        .live-search-item {
-            width: 70px;
-            border-left-style: solid;
-            border-color: red; 
-            border-width:5px;
+        div a img[class~=card-img-top] {
+            height: 240px;
+            max-width: 240px;
+            
+        }
+        .filter, #brands, #cities, #storage{
+            font-size: 20px;
+        }
+        .card p{
+            font-size: 70%;
+        }
+        .checkbox-menu li label {
+            display: block;
+            padding: 3px 10px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            color: #333;
+            white-space: nowrap;
+            margin:0;
+            transition: background-color .4s ease;
+        }
+        .checkbox-menu li input {
+            margin: 0px 5px;
+            top: 2px;
+            position: relative;
+        }
+
+        .checkbox-menu li.active label {
+            background-color: #cbcbff;
+            font-weight:bold;
+        }
+
+        .checkbox-menu li label:hover,
+        .checkbox-menu li label:focus {
+            background-color: #f5f5f5;
+        }
+
+        .checkbox-menu li.active label:hover,
+        .checkbox-menu li.active label:focus {
+            background-color: #b8b8ff;
         }
     </style>
     </head>
@@ -151,15 +187,8 @@
                     </div>
 -->
     
-                    <form class="form-inline my-2 my-lg-0 " method="post" action="search-page.php">
-                        <div class="dropdown">
-                            <input id="search-box" class="form-control mr-sm-2" name="search-input" type="search" placeholder="Search" aria-label="Search" data-toggle="dropdown">
-                            <div id="live-search-items" class="dropdown-menu w-100">
-                                
-                            </div>
-                        </div>
-                        <button class="btn btn-outline-danger  my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    
+                    <?php include 'search-box.php'; ?>
                 </div>
             </div>
         </div>
@@ -216,141 +245,31 @@
     </div>
     </nav>
         </header>
-
-<!--                                                write HERE!!!                           -->
-        <div class="row">
-            <div id="filters" class="col-md-2">
-                <span class="col-md-12 sr-only">Filtering</span>
-<!--                                                    brand filter                                    -->
-                <a id="brands-filter" class="btn col-md-12 text-left filter" data-toggle="collapse" data-target="#brands">
-                    <b>Brand</b><span class="fa fa-caret-down float-right brands-caret"></span></a>
-                <div id="brands" class="collapse" data-parent="#filters">
-                    <span id="samsung" class="btn text-left col-md-12">
-                        SAMSUNG<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="huawei" class="btn text-left col-md-12">
-                        HUAWEI<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="apple" class="btn text-left col-md-12">
-                        APPLE<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="xiaomi" class="btn text-left col-md-12">
-                        XIAOMI<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="sony" class="btn text-left col-md-12">
-                        SONY<span class="fa fa-check text-success float-right" hidden></span></span>
+           
+<!--                                                  Write here                      -->
+    <div class="container">
+            <div class="col-sm-12">
+<!--                                                 general device information           -->
+                <div class="row">
+                    <h4 class="text-danger col-12">General</h4>
+<!--                                                 brands choice                        -->
+                    <div id="brands-choice" class="col-sm-6">
+                         <div class="dropdown w-100">
+                             <input type="text" class="col- dropdown-toggle" data-toggle="dropdown">
+                            <div class="dropdown-menu checkbox-menu allow-focus col-12">
+                                <a href="#" class="w-100">
+                                    <span class="col-4">
+                                    <img src="iphone/iPhone6s.png" class="float-left live-search-item" style="width: 70px;border-left-style: solid;border-color: red; border-width:5px;">
+                                    </span>
+                                    <p class="col-8">iphone 6s</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-<!--                                                      city filter                            -->
-                <a id ="cities-filter" class="btn col-md-12 text-left filter" data-toggle="collapse" data-target="#cities">
-                    <b>City</b><span class="fa fa-caret-down float-right cities-caret"></span></a>
-                <div id="cities" class="collapse" data-parent="#filters">
-                    <span id="tripoli" class="btn text-left col-md-12">
-                        TRIPOLI<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="benghazi" class="btn text-left col-md-12">
-                        BENGHAZI<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="musrata" class="btn text-left col-md-12">
-                        MUSRATA<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="gheryan" class="btn text-left col-md-12">
-                        GHERYAN<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="sabha" class="btn text-left col-md-12">
-                        SABHA<span class="fa fa-check text-success float-right" hidden></span></span>
-                </div>
-<!--                                                      Storage space filter                       -->
-                <a id="storage-filter" class="btn col-md-12 text-left filter" data-toggle="collapse" data-target="#storage">
-                    <b>Storage</b><span class="fa fa-caret-down float-right storage-caret"></span></a>
-                <div id="storage" class="collapse" data-parent="#filters">
-                    <span id="8gb" class="btn text-left col-md-12">
-                        8GB<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="16gb" class="btn text-left col-md-12">
-                        16GB<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="32gb" class="btn text-left col-md-12">
-                        32GB<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="64gb" class="btn text-left col-md-12">
-                        64GB<span class="fa fa-check text-success float-right" hidden></span></span>
-                    <span id="128gb" class="btn text-left col-md-12">
-                        128GB<span class="fa fa-check text-success float-right" hidden></span></span>
-                </div>
-                <a></a>
-                <div class=""></div>
-                <a></a>
-                <div class=""></div>
-                <a></a>
-                <div class=""></div>
             </div>
-            
-<!--                                     filter form to be sent to server                              -->
-            <form class="form form-inline" action="index.html" method="post" hidden>
-<!--                                          brands filter input                  -->
-                    <div id="brands-list" class="form-group">
-                        <label for="samsung-input" class="form-label">
-                        <input id="samsung-input" type="checkbox" name="brand-1" value="samsung" class="form-control">
-                        SAMSUNG</label>
+    </div>
 
-                        <label for="huawei-input" class="form-label">
-                        <input id="huawei-input" type="checkbox" name="brand-2" value="huawei" class="form-control">
-                        HUAWEI</label>
-
-                        <label for="apple-input" class="form-label">
-                        <input id="apple-input" type="checkbox" name="brand-3" value="apple" class="form-control">
-                        APPLE</label>
-
-                        <label for="xiaomi-input" class="form-label">
-                        <input id="xiaomi-input" type="checkbox" name="brand-4" value="xiaomi" class="form-control">
-                        xiaomi</label>
-
-                        <label for="sony-input" class="form-label">
-                        <input id="sony-input" type="checkbox" name="brand-5" value="sony" class="form-control">
-                        SONY</label>
-                    </div>
-<!--                                       cities filter input                       -->
-                    <div id="cities-list" class="form-group">
-                        <label for="tripoli-input" class="form-label">
-                        <input id="tripoli-input" type="checkbox" name="tripoli" value="tripoli" class="form-control">
-                        Tripoli</label>
-
-                        <label for="benghazi-input" class="form-label">
-                        <input id="benghazi-input" type="checkbox" name="benghazi" value="benghazi" class="form-control">
-                        Benghazi</label>
-
-                        <label for="musrata-input" class="form-label">
-                        <input id="musrata-input" type="checkbox" name="musrata" value="musrata" class="form-control">
-                        Musrata</label>
-
-                        <label for="gheryan-input" class="form-label">
-                        <input id="gheryan-input" type="checkbox" name="ghryan" value="ghryan" class="form-control">
-                        ghryan</label>
-
-                        <label for="sabha-input" class="form-label">
-                        <input id="sabha-input" type="checkbox" name="sabha" value="sabha" class="form-control">
-                        sabha</label>
-                    </div>
-<!--                                       storage filter input                       -->
-                <div id="storage-list" class="form-group">
-                        <label for="8gb-input" class="form-label">
-                        <input id="8gb-input" type="checkbox" name="8gb" value="8gb" class="form-control">
-                        8GB</label>
-
-                        <label for="16gb-input" class="form-label">
-                        <input id="16gb-input" type="checkbox" name="16gb" value="16gb" class="form-control">
-                        16GB</label>
-
-                        <label for="32gb-input" class="form-label">
-                        <input id="32gb-input" type="checkbox" name="32gb" value="32gb" class="form-control">
-                        32gb</label>
-
-                        <label for="64gb-input" class="form-label">
-                        <input id="64gb-input" type="checkbox" name="64gb" value="64gb" class="form-control">
-                        64gb</label>
-
-                        <label for="128gb-input" class="form-label">
-                        <input id="128gb-input" type="checkbox" name="128gb" value="128gb" class="form-control">
-                        128gb</label>
-                    </div>
-                </form>
-<!--                                              search results                                 -->
-            
-            <?php
-                    require 'search-by-device-name.php';
-            ?>
-        </div>
-           
-           
 <footer class="footer">
 <div class="container">
     <div class="row">
@@ -399,7 +318,7 @@
     </div> 
     <hr class="hr">
 </div> 
-        
+    
 </footer>
 <!-- end footer -->
     
@@ -435,16 +354,15 @@
         
 </div>
 <!--<div id="goup"><b class="far fa-arrow-circle-up"></b></div>-->
-    <script src="js/jquery-3.3.1.min.js"></script>
+  
     <script src="js/popper/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
 
     <script type="text/javascript" src="jquery/jquery.cycle2.min.js"></script>
     <script type="text/javascript" src="js/slider-fun.js"></script>
     <script type="text/javascript" src="menu.left.js"></script>
     <script type="text/javascript" src="js/scroll-top.js"></script>
-    <script type="text/javascript">
+        <script type="text/javascript">
         //* Load Font Awesome
         
 add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
@@ -460,7 +378,6 @@ function enqueue_font_awesome() {
         $("#wrapper").toggleClass("toggled");
     });
     </script>
-        
 <!--                                         brand input filter toggle                         -->
     <script>
         $(document).ready(function(){
@@ -520,8 +437,8 @@ function enqueue_font_awesome() {
                 }
            });
         });        
-    </script>
-<!--                                         city input filter toggle                         -->
+    </script> 
+<!--                                         city input filter toggle                          -->
     <script>
         $(document).ready(function(){
             $('#tripoli').click(function(){
@@ -580,7 +497,7 @@ function enqueue_font_awesome() {
                 }
            });
         });
-    </script>
+    </script>  
 <!--                                         storage input filter toggle                       -->
     <script>
         $(document).ready(function(){
@@ -641,7 +558,7 @@ function enqueue_font_awesome() {
            });
         });
     </script>
-<!--                                         filter catagories toggale                     -->
+<!--                                         filter catagories toggale                         -->
     <script>
         $(document).ready(function(){
             $('#brands').on('show.bs.collapse', function(){
@@ -687,21 +604,30 @@ function enqueue_font_awesome() {
             });
         });
     </script>
-<!--                                         live search ajax method                          -->
+<!--                                         geting results from database (ajax)               -->
     <script>
-        $(document).ready(function() {
-            $('#search-box').keyup(function(){
-                var input = $('#search-box').val();
-                $.ajax({
-                    type : 'GET',
-                    dataType : 'html',
-                    url : 'search-box.php',
-                    data : {inputValue : input}
-                })
-                .done(function (data){
-                    $('#live-search-items').innerHTML = data;
-                });
-            });
+        function getSearchResults(str){
+            if (str.length == 0) {
+                $('#test').HTML("");
+                return;
+            }
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if(xhttp.readyState == 4 && xhttp.status == 200) {
+                    $('#test').HTML("xhttp.responseText")
+                }
+            };
+            xhttp.open("GET", "filter-engine.php", true);
+            xhttp.send();
+        }
+    </script>
+<!--                                         dropdown stay open on click                       -->
+    <script>
+        $(".checkbox-menu").on("change", "input[type='checkbox']", function() {
+            $(this).closest("li").toggleClass("active", this.checked);
+        });
+        $(document).on('click', '.allow-focus', function (e) {
+            e.stopPropagation();
         });
     </script>
     </body>
